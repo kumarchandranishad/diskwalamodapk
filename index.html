@@ -162,11 +162,6 @@
             font-weight: 700;
         }
 
-        .app-hero-meta-bar .rating-value::before {
-            content: '★ ';
-            color: #facc15; /* Yellow for star */
-        }
-
         /* Action Buttons */
         .app-hero-actions {
             margin-top: 25px;
@@ -266,12 +261,6 @@
             margin-bottom: 25px;
         }
 
-        .alert-box-warning {
-            background-color: rgba(251, 146, 60, 0.1);
-            border-color: #fb923c;
-            color: #fb923c;
-        }
-
         .alert-box-danger {
             background-color: rgba(239, 68, 68, 0.1);
             border-color: var(--danger);
@@ -340,7 +329,7 @@
             margin-top: 40px;
         }
         .site-footer p { margin: 8px 0; }
-        .site-footer a { font-weight: 600; }
+        
     </style>
 
     <script type="application/ld+json">
@@ -450,16 +439,18 @@
         
         <footer class="site-footer">
             <p>© <span id="year"></span> Diskwala MOD APK Info - For Informational Purposes Only.</p>
-            <p><a href="about-us.html">About</a> | <a href="contact-us.html">Contact</a> | <a href="privacy-policy.html">Privacy</a> | <a href="terms-of-use.html">Terms</a> | <a href="dmca.html">DMCA</a></p>
         </footer>
     </div>
     
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Set the current year in the footer
             const yearSpan = document.getElementById('year');
             if (yearSpan) {
                 yearSpan.textContent = new Date().getFullYear();
             }
+            
+            // Handle smooth scrolling for navigation links
             document.querySelectorAll('.content-nav a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
