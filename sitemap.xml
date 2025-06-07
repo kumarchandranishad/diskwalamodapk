@@ -4,10 +4,20 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- Homepage - Highest Priority -->
 <url>
   <loc>https://kumarchandranishad.github.io/diskwalamodapk/</loc>
   <lastmod>2025-06-06</lastmod>
   <changefreq>monthly</changefreq>
   <priority>1.0</priority>
 </url>
+
+<!-- Suhag CG Movie Page -->
+<url>
+  <loc>https://kumarchandranishad.github.io/diskwalamodapk/suhag-cg-movie.html</loc>
+  <lastmod>2025-06-06</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+
 </urlset>
